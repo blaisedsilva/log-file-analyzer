@@ -1,1 +1,5 @@
-pandas\nmatplotlib
+pandas
+matplotlib
+numpy
+seaborn
+requests
