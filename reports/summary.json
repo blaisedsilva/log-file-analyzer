@@ -1,0 +1,26 @@
+{
+    "apache_bruteforce": {
+        "ip": {
+            "0": "127.0.0.1"
+        },
+        "attempts": {
+            "0": 5
+        }
+    },
+    "ssh_bruteforce": {
+        "host": {
+            "0": "host"
+        },
+        "attempts": {
+            "0": 5
+        }
+    },
+    "scanning": {
+        "ip": {},
+        "unique_paths": {}
+    },
+    "dos": {
+        "ip": {},
+        "req_count": {}
+    }
+}
