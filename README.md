@@ -1,4 +1,6 @@
 # 🔍 Log File Analyzer for Intrusion Detection
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## 📖 Overview
 This project analyzes **Apache** and **SSH logs** to detect suspicious activities such as brute-force attacks, port scanning, and denial-of-service (DoS) attempts.  
@@ -54,6 +56,15 @@ It generates **structured reports** and **visualizations** to effectively identi
   - Suspicious activity summary charts  
 - Reports saved in `reports/`  
 - Documentation updated: `docs/PLAN_DAY4.md`, `docs/FLOW_DAY4.md`  
+
+
+  ## 📊 Sample Visualizations  
+
+   ![Apache Brute Force Attempts](reports/apache_bruteforce.png)  
+   *Figure: Apache brute-force detection*  
+
+   ![SSH Brute Force Attempts](reports/ssh_bruteforce.png)  
+   *Figure: SSH brute-force detection*  
 
 ---
 
