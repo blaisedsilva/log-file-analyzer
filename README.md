@@ -60,11 +60,26 @@ It generates **structured reports** and **visualizations** to effectively identi
 
   ## 📊 Sample Visualizations  
 
-   ![Apache Brute Force Attempts](reports/apache_bruteforce.png)  
-   *Figure: Apache brute-force detection*  
+### Apache Brute Force Attempts
+![Apache Brute Force](reports/apache_bruteforce.png)  
+*Figure: Apache brute-force detection*
 
-   ![SSH Brute Force Attempts](reports/ssh_bruteforce.png)  
-   *Figure: SSH brute-force detection*  
+### SSH Brute Force Attempts
+![SSH Brute Force](reports/ssh_bruteforce.png)  
+*Figure: SSH brute-force detection*
+
+### Top 10 IP Addresses
+![Top 10 IP Addresses](reports/top10_ips.png)  
+*Figure: Top 10 attacking IPs*
+
+### Requests Over Time
+![Requests Over Time](reports/requests_over_time.png)  
+*Figure: Request patterns showing DoS attempts*
+
+### Suspicious Activity Summary
+![Suspicious Activity Summary](reports/suspicious_summary.png)  
+*Figure: Combined suspicious activity overview*
+
 
 ---
 
