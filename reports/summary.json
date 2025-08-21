@@ -1,26 +1,22 @@
 {
-    "apache_bruteforce": {
-        "ip": {
-            "0": "127.0.0.1"
-        },
-        "attempts": {
-            "0": 5
-        }
-    },
-    "ssh_bruteforce": {
-        "host": {
-            "0": "host"
-        },
-        "attempts": {
-            "0": 5
-        }
-    },
-    "scanning": {
-        "ip": {},
-        "unique_paths": {}
-    },
-    "dos": {
-        "ip": {},
-        "req_count": {}
-    }
+  "counts": {
+    "apache_entries": 13,
+    "ssh_entries": 6
+  },
+  "detections": {
+    "apache_bruteforce": [
+      {
+        "ip": "127.0.0.1",
+        "attempts": 5
+      }
+    ],
+    "ssh_bruteforce": [
+      {
+        "ip": "203.0.113.5",
+        "attempts": 5
+      }
+    ],
+    "scanning": [],
+    "dos": []
+  }
 }
