@@ -57,6 +57,12 @@ It generates **structured reports** and **visualizations** to effectively identi
 - Reports saved in `reports/`  
 - Documentation updated: `docs/PLAN_DAY4.md`, `docs/FLOW_DAY4.md`  
 
+### ✅ Day 5
+- Setup **testing framework** (`pytest`)  
+- Added **unit tests** for Apache & SSH log parsing  
+- Verified detection logic against sample logs  
+- Documentation updated: `docs/TESTING_NOTES.md`
+
 
   ## 📊 Sample Visualizations  
 
