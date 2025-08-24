@@ -63,6 +63,10 @@ It generates **structured reports** and **visualizations** to effectively identi
 - Verified detection logic against sample logs  
 - Documentation updated: `docs/TESTING_NOTES.md`
 
+### ✅ Day 6 (23rd Aug)
+- Wrote **Python script to parse Apache logs**  
+- Counted errors, warnings, and access attempts  
+- Generated **enhanced CSV report**: `apache_parsed.csv` with columns:  
 
   ## 📊 Sample Visualizations  
 
