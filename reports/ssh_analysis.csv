@@ -1,0 +1,7 @@
+date,status,user,ip,is_failed,is_success,suspicious,country
+2025-08-12 21:10:01,FAILED,admin,203.0.113.5,True,False,False,India
+2025-08-12 21:10:05,FAILED,admin,203.0.113.5,True,False,False,India
+2025-08-12 21:10:10,FAILED,admin,203.0.113.5,True,False,True,India
+2025-08-12 21:10:15,FAILED,admin,203.0.113.5,True,False,True,India
+2025-08-12 21:10:20,FAILED,admin,203.0.113.5,True,False,True,India
+2025-08-12 21:11:30,SUCCESS,ubuntu,198.51.100.77,False,True,False,Private Network

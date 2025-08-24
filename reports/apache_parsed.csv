@@ -1,14 +1,14 @@
-ip,time,method,endpoint,status,size,dt
-127.0.0.1,12/Mar/2025:19:15:01 +0000,GET,/login,401,512,2025-03-12 19:15:01
-127.0.0.1,12/Mar/2025:19:15:05 +0000,GET,/login,401,512,2025-03-12 19:15:05
-127.0.0.1,12/Mar/2025:19:15:10 +0000,GET,/login,401,512,2025-03-12 19:15:10
-127.0.0.1,12/Mar/2025:19:15:15 +0000,GET,/login,401,512,2025-03-12 19:15:15
-127.0.0.1,12/Mar/2025:19:15:20 +0000,GET,/login,401,512,2025-03-12 19:15:20
-192.168.1.10,12/Mar/2025:19:16:01 +0000,GET,/index.html,200,1024,2025-03-12 19:16:01
-192.168.1.10,12/Mar/2025:19:16:05 +0000,GET,/about.html,200,1024,2025-03-12 19:16:05
-192.168.1.10,12/Mar/2025:19:16:10 +0000,GET,/contact.html,200,1024,2025-03-12 19:16:10
-203.0.113.5,12/Mar/2025:19:16:15 +0000,GET,/admin,404,256,2025-03-12 19:16:15
-203.0.113.5,12/Mar/2025:19:16:20 +0000,GET,/admin,404,256,2025-03-12 19:16:20
-203.0.113.5,12/Mar/2025:19:16:25 +0000,GET,/admin,404,256,2025-03-12 19:16:25
-203.0.113.5,12/Mar/2025:19:16:30 +0000,GET,/admin,404,256,2025-03-12 19:16:30
-203.0.113.5,12/Mar/2025:19:16:35 +0000,GET,/admin,404,256,2025-03-12 19:16:35
+ip,time,method,url,status,size,is_error,is_warning,suspicious,country
+127.0.0.1,12/Mar/2025:19:15:01 +0000,GET,/login,401,512,True,False,True,Localhost
+127.0.0.1,12/Mar/2025:19:15:05 +0000,GET,/login,401,512,True,False,True,Localhost
+127.0.0.1,12/Mar/2025:19:15:10 +0000,GET,/login,401,512,True,False,True,Localhost
+127.0.0.1,12/Mar/2025:19:15:15 +0000,GET,/login,401,512,True,False,True,Localhost
+127.0.0.1,12/Mar/2025:19:15:20 +0000,GET,/login,401,512,True,False,True,Localhost
+192.168.1.10,12/Mar/2025:19:16:01 +0000,GET,/index.html,200,1024,False,False,False,Private Network
+192.168.1.10,12/Mar/2025:19:16:05 +0000,GET,/about.html,200,1024,False,False,False,Private Network
+192.168.1.10,12/Mar/2025:19:16:10 +0000,GET,/contact.html,200,1024,False,False,False,Private Network
+203.0.113.5,12/Mar/2025:19:16:15 +0000,GET,/admin,404,256,True,False,True,India
+203.0.113.5,12/Mar/2025:19:16:20 +0000,GET,/admin,404,256,True,False,True,India
+203.0.113.5,12/Mar/2025:19:16:25 +0000,GET,/admin,404,256,True,False,True,India
+203.0.113.5,12/Mar/2025:19:16:30 +0000,GET,/admin,404,256,True,False,True,India
+203.0.113.5,12/Mar/2025:19:16:35 +0000,GET,/admin,404,256,True,False,True,India
