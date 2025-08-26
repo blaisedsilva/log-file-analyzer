@@ -86,6 +86,17 @@ It generates **structured reports** and **visualizations** to effectively identi
   - Created visualization: `bruteforce_top_ips.png` showing top offending IPs
 - Updated reports: `ssh_analysis.csv` with enriched insights
 
+### ✅ Day 8 (26th Aug)
+- Implemented **scanning attack detection**:
+  - Flags IPs hitting many **unique endpoints** (total and within a rolling 5-minute window)
+  - Generates **CSV report**: `reports/scanning.csv`
+  - Adds **chart**: `reports/scanning_top_ips.png` (suspicious IPs in red)
+- Configurable thresholds via CLI:
+  - `--threshold-total` (default 30)
+  - `--window-minutes` (default 5)
+  - `--threshold-window` (default 20)
+
+
 ## 📊 Sample Visualizations  
 
 ### Apache Brute Force Attempts
