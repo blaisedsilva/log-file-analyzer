@@ -60,7 +60,7 @@ It generates **structured reports** and **visualizations** to effectively identi
 ### ✅ Day 6 (23rd Aug)
 - Wrote **Python script to parse Apache logs**  
 - Counted errors, warnings, and access attempts  
-- Generated **enhanced CSV report**: `apache_parsed.csv` with columns:  
+- Generated **enhanced CSV report**: `apache_parsed.csv` with columns  
 
 ### ✅ Day 7 (24th Aug)
 - Extended **SSH log parsing**  
@@ -77,6 +77,14 @@ It generates **structured reports** and **visualizations** to effectively identi
   3. **SSH Login Status Distribution (Pie Chart)**  
      Success vs failed login proportions  
      ![SSH Status Pie](reports/ssh_status_pie.png)
+
+### ✅ Day 8 (25th Aug - Monday)
+- Implemented **Brute Force Detector Module**
+  - Analyzed failed login attempts from SSH logs
+  - Flagged suspicious IPs with repeated failed logins
+  - Generated detailed report: `bruteforce.csv`
+  - Created visualization: `bruteforce_top_ips.png` showing top offending IPs
+- Updated reports: `ssh_analysis.csv` with enriched insights
 
 ## 📊 Sample Visualizations  
 
