@@ -1,1 +1,4 @@
-ip,unique_paths
+ip,unique_endpoints_total,max_unique_endpoints_5min,first_seen,last_seen,is_scanner,sample_endpoints
+192.168.1.10,3,0,,,False,"/index.html, /about.html, /contact.html"
+127.0.0.1,1,0,,,False,/login
+203.0.113.5,1,0,,,False,/admin
