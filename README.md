@@ -105,6 +105,19 @@ It generates **structured reports** and **visualizations** to effectively identi
   -   -- threshold (default 100 requests)
   -   --window-minutes (default 1 minute)  
 
+### ✅ Day 11
+- **Tested the tool on sample logs**:
+  - Ran **Brute Force Detector**, **Scanning Detector**, and **DoS Detector** scripts
+  - Verified that reports and visualizations are generated correctly:
+    - `reports/bruteforce.csv` & `bruteforce_top_ips.png`
+    - `reports/scanning.csv` & `scanning_top_ips.png`
+    - `reports/dos.csv` & `dos_top_ips.png`
+- Debugged and ensured correct threat detection:
+  - All modules correctly flag suspicious IPs
+  - Output matches expected results from sample log files
+- No critical errors or warnings remain; tool works as intended
+
+
 
 ## 📊 Sample Visualizations  
 
