@@ -117,6 +117,17 @@ It generates **structured reports** and **visualizations** to effectively identi
   - Output matches expected results from sample log files
 - No critical errors or warnings remain; tool works as intended
 
+### ✅ Day 12
+- Created visualizations using Matplotlib:
+- Plotted Top IPs vs number of attempts for Brute Force, Scanning, and DoS
+- Generated time-based plots to show request trends over time
+- **All visualizations saved in reports/ folder**:
+- bruteforce_top10_ips_chart.png
+- scanning_top10_ips_chart.png
+- dos_time_plot.png
+- Verified charts display suspicious IPs in red for easy identification
+- Ensured plots are readable, labeled, and ready for reporting
+- Code for visualizations added in src/visualizations.py
 
 
 ## 📊 Sample Visualizations  
