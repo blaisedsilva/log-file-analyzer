@@ -96,6 +96,15 @@ It generates **structured reports** and **visualizations** to effectively identi
   - `--window-minutes` (default 5)
   - `--threshold-window` (default 20)
 
+### ✅ Day 10
+- Implemented **DoS attack detection**:
+  - Flags IPs making a high number of requests within a short time window
+  - Generates CSV report: reports/dos.csv
+  - Adds chart: reports/dos_top_ips.png (suspicious IPs in red)
+- Configurable thresholds via CLI:
+  -   -- threshold (default 100 requests)
+  -   --window-minutes (default 1 minute)  
+
 
 ## 📊 Sample Visualizations  
 
