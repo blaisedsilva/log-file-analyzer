@@ -1,5 +1,5 @@
 # 🔍 Log File Analyzer for Intrusion Detection
-![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Python](https://img.shields.io/badge/Python-3.13-blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## 📖 Overview
@@ -12,12 +12,13 @@ It generates **structured reports** and **visualizations** to effectively identi
 - **Matplotlib** – Visualization of attack patterns  
 - **Seaborn** – Advanced plotting  
 - **Regex** – Pattern matching for log parsing  
+- **ReportLab** – PDF report generation  
 - **Pytest** – Unit testing framework  
 
 ## 📂 Project Structure
 - `logs/` : Sample log files  
 - `src/` : Python source code  
-- `reports/` : Generated reports (CSV, JSON, PNG)  
+- `reports/` : Generated reports (CSV, TXT, PDF, PNG)  
 - `data/` : Processed data files  
 - `tests/` : Unit testing scripts  
 - `docs/` : Documentation and planning notes  
@@ -69,13 +70,10 @@ It generates **structured reports** and **visualizations** to effectively identi
   - Saved updated CSV report: `ssh_analysis.csv`  
 - Added **SSH visualizations**:
   1. **Failed SSH Login Attempts per IP**  
-     Suspicious IPs highlighted in red  
      ![Failed SSH Attempts](reports/ssh_failed_attempts_highlighted.png)
   2. **Suspicious SSH Login Attempts Over Time**  
-     Shows trends of repeated failed logins  
      ![SSH Suspicious Over Time](reports/ssh_suspicious_over_time.png)
   3. **SSH Login Status Distribution (Pie Chart)**  
-     Success vs failed login proportions  
      ![SSH Status Pie](reports/ssh_status_pie.png)
 
 ### ✅ Day 8 
@@ -83,79 +81,66 @@ It generates **structured reports** and **visualizations** to effectively identi
   - Analyzed failed login attempts from SSH logs
   - Flagged suspicious IPs with repeated failed logins
   - Generated detailed report: `bruteforce.csv`
-  - Created visualization: `bruteforce_top_ips.png` showing top offending IPs
-- Updated reports: `ssh_analysis.csv` with enriched insights
+  - Created visualization: `bruteforce_top_ips.png`
 
 ### ✅ Day 9
 - Implemented **scanning attack detection**:
-  - Flags IPs hitting many **unique endpoints** (total and within a rolling 5-minute window)
+  - Flags IPs hitting many **unique endpoints**
   - Generates **CSV report**: `reports/scanning.csv`
-  - Adds **chart**: `reports/scanning_top_ips.png` (suspicious IPs in red)
-- Configurable thresholds via CLI:
-  - `--threshold-total` (default 30)
-  - `--window-minutes` (default 5)
-  - `--threshold-window` (default 20)
+  - Adds **chart**: `reports/scanning_top_ips.png`
 
 ### ✅ Day 10
 - Implemented **DoS attack detection**:
-  - Flags IPs making a high number of requests within a short time window
-  - Generates CSV report: reports/dos.csv
-  - Adds chart: reports/dos_top_ips.png (suspicious IPs in red)
-- Configurable thresholds via CLI:
-  -   -- threshold (default 100 requests)
-  -   --window-minutes (default 1 minute)  
+  - Flags IPs making a high number of requests in a short time window
+  - Generates CSV report: `reports/dos.csv`
+  - Adds chart: `reports/dos_top_ips.png`
 
 ### ✅ Day 11
-- **Tested the tool on sample logs**:
-  - Ran **Brute Force Detector**, **Scanning Detector**, and **DoS Detector** scripts
-  - Verified that reports and visualizations are generated correctly:
-    - `reports/bruteforce.csv` & `bruteforce_top_ips.png`
-    - `reports/scanning.csv` & `scanning_top_ips.png`
-    - `reports/dos.csv` & `dos_top_ips.png`
-- Debugged and ensured correct threat detection:
-  - All modules correctly flag suspicious IPs
-  - Output matches expected results from sample log files
-- No critical errors or warnings remain; tool works as intended
+- **Tested all detection modules** with sample logs
+- Verified reports + charts:
+  - `bruteforce.csv`, `scanning.csv`, `dos.csv`
+  - `bruteforce_top_ips.png`, `scanning_top_ips.png`, `dos_top_ips.png`
+- Debugged → modules work as expected
 
 ### ✅ Day 12
-- Created visualizations using Matplotlib:
-- Plotted Top IPs vs number of attempts for Brute Force, Scanning, and DoS
-- Generated time-based plots to show request trends over time
-- **All visualizations saved in reports/ folder**:
-- bruteforce_top10_ips_chart.png
-- scanning_top10_ips_chart.png
-- dos_time_plot.png
-- Verified charts display suspicious IPs in red for easy identification
-- Ensured plots are readable, labeled, and ready for reporting
-- Code for visualizations added in src/visualizations.py
+- Created **visualizations using Matplotlib**:
+  - Top IPs for Brute Force, Scanning, DoS
+  - Time-based request trends
+- Reports saved in `reports/`:
+  - `bruteforce_top10_ips_chart.png`
+  - `scanning_top10_ips_chart.png`
+  - `dos_time_plot.png`
 
+### ✅ Day 13
+- Implemented **Incident Report Generation**
+  - Exports in **CSV, TXT, and PDF** formats
+  - Reports automatically saved inside `reports/` folder
+- Verified functionality:  
+  ✅ `incident_report.csv`  
+  ✅ `incident_report.txt`  
+  ✅ `incident_report.pdf`
 
 ## 📊 Sample Visualizations  
 
 ### Apache Brute Force Attempts
 ![Apache Brute Force](reports/apache_bruteforce.png)  
-*Figure: Apache brute-force detection*
 
 ### SSH Brute Force Attempts
 ![SSH Brute Force](reports/ssh_bruteforce.png)  
-*Figure: SSH brute-force detection*
 
 ### Top 10 IP Addresses
 ![Top 10 IP Addresses](reports/top10_ips.png)  
-*Figure: Top 10 attacking IPs*
 
 ### Requests Over Time
 ![Requests Over Time](reports/requests_over_time.png)  
-*Figure: Request patterns showing DoS attempts*
 
 ### Suspicious Activity Summary
 ![Suspicious Activity Summary](reports/suspicious_summary.png)  
-*Figure: Combined suspicious activity overview*
 
 ## 📌 Next Steps
-- [ ] Add PDF export support  
-- [ ] Enhance DoS detection with time-based thresholds  
+- [ ] Enhance DoS detection with advanced thresholds  
 - [ ] Correlate IPs with public blacklists  
+- [ ] Add interactive dashboards (future scope)  
 
 ## 👤 Author
 **Blaise Dsilva**  
