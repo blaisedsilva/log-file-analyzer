@@ -120,6 +120,15 @@ It generates **structured reports** and **visualizations** to effectively identi
   ✅ `incident_report.txt`  
   ✅ `incident_report.pdf`
 
+### ✅ Day 14
+- Integrated **IP Blacklist Checking**  
+  - Cross-checks suspicious IPs against a known blacklist  
+  - Flags blacklisted IPs with reason (e.g., brute-force attacker, port scanner)  
+  - Outputs results directly in terminal  
+- Verified functionality:  
+  ✅ Blacklist detection working with sample IPs  
+
+
 ## 📊 Sample Visualizations  
 
 ### Apache Brute Force Attempts
