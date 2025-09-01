@@ -128,6 +128,18 @@ It generates **structured reports** and **visualizations** to effectively identi
 - Verified functionality:  
   ✅ Blacklist detection working with sample IPs  
 
+### ✅ Day 15
+- **Tested tool with multiple log samples**:
+  - Sample logs tested: `apache_sample.log`, `ssh_sample.log`, `mixed_sample.log`
+  - Ran all detection modules: Brute Force, Scanning, and DoS
+  - Reports generated and saved in `reports/`:
+    - Brute Force: `bruteforce.csv`, `bruteforce_top_ips.png`
+    - Scanning: `scanning.csv`, `scanning_top_ips.png`
+    - DoS: `dos.csv`, `dos_top_ips.png`
+- Verified that modules correctly detect threats across multiple log types
+- Tool runs successfully on batch log files using bash loop
+
+
 
 ## 📊 Sample Visualizations  
 
