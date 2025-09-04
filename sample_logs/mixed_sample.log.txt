@@ -1,0 +1,5 @@
+192.168.1.150 - - [01/Sep/2024:12:10:01 +0000] "GET /contact.html HTTP/1.1" 200 600
+Sep  1 12:11:11 server sshd[3001]: Failed password for root from 203.0.113.88 port 40123 ssh2
+Sep  1 12:11:12 server sshd[3001]: Failed password for root from 203.0.113.88 port 40123 ssh2
+192.168.1.151 - - [01/Sep/2024:12:12:21 +0000] "POST /upload.php HTTP/1.1" 500 123
+10.0.0.60 - - [01/Sep/2024:12:13:45 +0000] "GET /wp-login.php HTTP/1.1" 404 210

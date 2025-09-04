@@ -139,6 +139,15 @@ It generates **structured reports** and **visualizations** to effectively identi
 - Verified that modules correctly detect threats across multiple log types
 - Tool runs successfully on batch log files using bash loop
 
+### ✅ Day 16
+- Optimized codebase for better readability and maintainability  
+- Added clear **inline comments** explaining parsing, detection, and visualization logic  
+- Restructured scripts to be **modular**:
+  - Wrapped logic inside functions (`main()`, `detect_bruteforce()`, etc.)
+  - Moved repeated logic into reusable functions  
+- Cleaned unused imports and redundant code  
+- Verified all detection modules still run correctly after cleanup
+
 
 
 ## 📊 Sample Visualizations  
