@@ -156,6 +156,18 @@ It generates **structured reports** and **visualizations** to effectively identi
      - Visualizations (e.g., brute-force top IP plot)
 - Reports (bruteforce.csv, ssh_analysis.csv, etc.)
 
+### ✅ Day 18
+- Ran the tool **end-to-end on all sample logs** (Apache, SSH, Mixed)  
+- Verified correctness of generated reports and visualizations:  
+  - **Bruteforce Detector** → Detected incidents, generated CSV + PNG  
+  - **Scanning Detector** → Checked logs, no false positives  
+  - **DoS Detector** → Flagged suspicious IPs, saved CSV + PNG  
+- Reports confirmed in `reports/` folder:  
+  - `bruteforce.csv`, `ssh_analysis.csv`, `scanning.csv`, `dos.csv`  
+- Visualizations confirmed:  
+  - `bruteforce_top_ips.png`, `scanning_top_ips.png`, `dos_top_ips.png`  
+- Saved screenshots of results for documentation
+
 
 ## 📊 Sample Visualizations  
 
