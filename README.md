@@ -148,6 +148,13 @@ It generates **structured reports** and **visualizations** to effectively identi
 - Cleaned unused imports and redundant code  
 - Verified all detection modules still run correctly after cleanup
 
+### ✅ Day 17
+- Prepare screenshots of logs, visualizations, and reports for the final document
+- Created a screenshots/ folder in the project.
+- Added screenshots of:
+     - Sample log files (apache_sample.log, ssh_sample.log, mixed_sample.log)
+     - Visualizations (e.g., brute-force top IP plot)
+- Reports (bruteforce.csv, ssh_analysis.csv, etc.)
 
 
 ## 📊 Sample Visualizations  
