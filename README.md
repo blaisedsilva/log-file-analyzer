@@ -168,6 +168,15 @@ It generates **structured reports** and **visualizations** to effectively identi
   - `bruteforce_top_ips.png`, `scanning_top_ips.png`, `dos_top_ips.png`  
 - Saved screenshots of results for documentation
 
+### ✅ Day 19  
+- Cleaned up the GitHub repository structure:  
+  - Organized folders (`src/`, `reports/`, `sample_logs/`, `screenshots/`, `docs/`, `tests/`)  
+  - Removed unnecessary/cache files  
+  - Finalized `README.md` with complete progress timeline  
+- Committed and pushed final version of the project to GitHub  
+
+
+
 
 ## 📊 Sample Visualizations  
 
